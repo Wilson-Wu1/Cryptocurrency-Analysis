@@ -16,6 +16,9 @@ api = PushshiftAPI()
 start_epoch = int(dt.datetime(2009, 1, 1).timestamp())
 end_epoch = int(dt.datetime(2012, 1, 1).timestamp())
 
+# How to run
+# python3 reddit.py OUTPUT_CSV_NAME
+
 def get_data(out_dir):
     
     api_request_generator = api.search_comments(q='bitcoin', after=start_epoch, before=end_epoch)
