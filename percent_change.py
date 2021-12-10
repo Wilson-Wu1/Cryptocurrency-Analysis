@@ -30,22 +30,21 @@ def compare_correlation(first_coin, second_coin):
     merged_df['Date'] = pd.to_datetime(merged_df['Date']).dt.date
     
     #Get correlation coefficient
-    correlation_coef = stats.linregress(merged_df['Price_x'], merged_df['Price_y']).rvalue
+    correlation_coef = stats.linregress(merged_df['Close_x'], merged_df['Close_y']).rvalue
     
     #Plotting...
     plt.rcParams["figure.figsize"] = (20,10)
     plt.plot(merged_df['Date'], merged_df['Price_x'], color = 'black')
     plt.plot(merged_df['Date'], merged_df['Price_y'],  alpha=0.75 )
-    plt.title("Percentage Change of " + first_coin + " vs. " + second_coin + "    Coorelation Coefficient: " +  str(correlation_coef), fontsize=20)
-    plt.xlabel("Date")
-    plt.ylabel("% Change")
-    plt.legend(labels = [first_coin, second_coin])
+    plt.title("Percentage Change of " + first_coin + " vs. " + second_coin + "    Correlation Coefficient: " +  str(correlation_coef), fontsize=20)
+    plt.xlabel("Date", fontsize=15)
+    plt.ylabel("Daily % Change", fontsize=15)
+    plt.xticks(fontsize = 15)
+    plt.yticks(fontsize = 15)
+    plt.legend(labels = [first_coin, second_coin], fontsize=15)
     plt.grid()
 
     plt.show()
-
-
-
 
 first_coin = sys.argv[1]
 second_coin = sys.argv[2]
