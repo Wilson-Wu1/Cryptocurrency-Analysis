@@ -60,7 +60,8 @@ df = df.drop(columns = ['Cosmos', 'Tron','Dogecoin','EOS','Uniswap','Litecoin','
 plt.rcParams["figure.figsize"] = (20,10)
 plt.title("Correlation Coefficient", fontsize=20)
 sns.heatmap(df, annot = True)
-plt.xticks(rotation=45)
+plt.xticks(rotation=45, fontsize = 15)
+plt.yticks(fontsize = 10)
 plt.savefig('correlation_coef.jpg')
 #plt.show()
 
@@ -85,7 +86,8 @@ plt.bar(bitcoin_correlation.index, bitcoin_correlation, color = (0.090, 0.188, 0
 #Ref: https://stackoverflow.com/questions/40287847/python-matplotlib-bar-chart-adding-bar-titles
 ax = plt.gca()
 plt.bar_label(ax.containers[0])
-plt.xticks(rotation=45)
+plt.xticks(rotation=45, fontsize = 15)
+plt.yticks(fontsize = 15)
 plt.grid()
 
 #For some reason savefig cuts off the x-label. plt.show() is used instead.
@@ -101,4 +103,3 @@ for i in df:
 
 df["sum"] = df.sum(axis=1)
 #print(df)
-
