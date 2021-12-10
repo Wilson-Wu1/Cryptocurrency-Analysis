@@ -1,13 +1,14 @@
 import pandas as pd
-import numpy as np
 import sys
 import matplotlib.pyplot as plt
 import pathlib
 from scipy import stats
 
+######################################################################
+# Creates a graph comparing the percentage change between two coins. #
+######################################################################
 
 
-#Compare the percentage change between two coins
 def compare_correlation(first_coin, second_coin):
 
 
@@ -35,7 +36,7 @@ def compare_correlation(first_coin, second_coin):
     plt.rcParams["figure.figsize"] = (20,10)
     plt.plot(merged_df['Date'], merged_df['Price_x'], color = 'black')
     plt.plot(merged_df['Date'], merged_df['Price_y'],  alpha=0.75 )
-    plt.title("Percentage Change of " + first_coin + " vs. " + second_coin + "    Coorelation Coefficient: " +  str(correlation_coef))
+    plt.title("Percentage Change of " + first_coin + " vs. " + second_coin + "    Coorelation Coefficient: " +  str(correlation_coef), fontsize=20)
     plt.xlabel("Date")
     plt.ylabel("% Change")
     plt.legend(labels = [first_coin, second_coin])
