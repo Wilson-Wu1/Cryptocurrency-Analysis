@@ -20,11 +20,8 @@ Required Libraries: Pandas, sys, matplotlib, pathlib, scipy.stats
 
 This program requires the coins .csv files to be located in the same directory level as the program.
 
-Run the program by executing "python percent_change.py [firstCoin] [secondCoin]" in the terminal. Ensure to indicate the two coins that are desired as sys arguments.
+Run the program by executing "python percent_change.py [firstCoin] [secondCoin]" in the terminal. Ensure to indicate the two coins that are desired as sys arguments. The visuals will be saved as .jpgs.
 
 Example: >python percent_change.py bitcoin polkadot
-
-The visuals will be saved as .jpgs.
-
 
 ### Any other programs...
