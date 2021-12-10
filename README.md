@@ -3,6 +3,7 @@
 ## How to Run Programs
 
 ### Neural Net
+...
 
 ### Run correlation.py
 Required Libraries: Pandas, Numpy, sys, matplotlib, pathlib, scipy.stats
