@@ -32,11 +32,20 @@ The csv file in out_directory_average will be used for the regression training m
 
 The out_directory_all run with the Neural Net 
 
-### run regression models
+### run models.py
 
-### run classification models
 
-### Neural Net
+Required Libraries: Pandas, Numpy, sys, matplotlib, sklearn, re, seaborn, datetime, requests
+
+BEFORE YOU RUN: create a folder called images
+
+if you run:
+
+python3 models.py coin_Bitcoin.csv DailyAverages.csv images
+
+it will run all the models and put the images into the images folder
+
+### neural.py
 
 Required Libraries: Pandas, Numpy, sys, matplotlib, pathlib, sklearn, keras
 
@@ -53,6 +62,7 @@ python3 neural.py NeuralNetInput.csv
 then this will run the neural net on the full dataset
 
 NeuralNetInput.csv can be found at the provided google drive
+https://drive.google.com/file/d/1RjXFVNA2X0g04F0SKgs4whEvMlNGnnwh/view?usp=sharing
 
 ### Run correlation.py
 Required Libraries: Pandas, Numpy, sys, matplotlib, pathlib, scipy.stats
