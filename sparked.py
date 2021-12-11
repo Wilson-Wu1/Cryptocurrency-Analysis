@@ -87,4 +87,4 @@ if __name__=='__main__':
     out_dir_sum = sys.argv[2]
     out_dir_avg = sys.argv[3]
     out_dir_all = sys.argv[4]
-    main(in_dir, out_dir_sum, out_dir_avg)
+    main(in_dir, out_dir_sum, out_dir_avg, out_dir_all)
